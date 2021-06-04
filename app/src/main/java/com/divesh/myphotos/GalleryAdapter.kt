@@ -38,6 +38,9 @@ class GalleryAdapter: RecyclerView.Adapter<GalleryAdapter.PhotoViewHolder>() {
                     .transition(DrawableTransitionOptions.withCrossFade())
                     .error(R.drawable.ic_error)
                     .into(imageView)
+
+                if (dog.breeds.size >= 1)  tvName.text = dog.breeds[0].name else tvName.text = "Not Available"
+
             }
         }
     }

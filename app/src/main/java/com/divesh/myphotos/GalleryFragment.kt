@@ -13,7 +13,7 @@ class GalleryFragment : Fragment(R.layout.fragment_layout) {
     private var _binding : FragmentLayoutBinding? = null
     private val binding get() = _binding!!
 
-    val viewModel by viewModels<GalleryViewModel>()
+    private val viewModel by viewModels<GalleryViewModel>()
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
